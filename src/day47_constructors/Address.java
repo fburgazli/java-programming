@@ -5,7 +5,7 @@ public class Address {
     private String city;
     private String state;
     private String zipCode;
-    String country = "USA";
+    private String country = "USA";
 
     public String getStreet() {
         return street;
@@ -41,12 +41,6 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zipCode='" + zipCode + '\'' +
-                ", country='" + country + '\'' +
-                '}';
+        return street+ ", " + city+", " + state + " "+ zipCode;
     }
 }
