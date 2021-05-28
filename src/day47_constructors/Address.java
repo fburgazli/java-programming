@@ -7,6 +7,24 @@ public class Address {
     private String zipCode;
     private String country = "USA";
 
+    //first constructor-automatically called
+    public Address(){
+        System.out.println("Address constructor.");
+        street ="123 Unknown St";
+        city ="Unknown";
+        state = "Unknown";
+        zipCode= "00000";
+    }
+
+    //second constructor, overload constructor -> provides shortcut to initialize variables in same statement
+    public Address(String street,String city,String state,String zipCode){
+        this.street=street;
+        this.city =city;
+        this.state =state;
+        this.zipCode =zipCode;
+    }
+
+
     public String getStreet() {
         return street;
     }
