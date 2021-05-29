@@ -8,6 +8,8 @@ public class Customer {
     //no-args constructor
     public Customer(){
         System.out.println("No-args constructor");
+        name ="new cusotmer";
+        id = -1;
     }
 
     public Customer(String name, int id){
