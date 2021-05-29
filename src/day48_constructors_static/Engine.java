@@ -17,4 +17,11 @@ public class Engine {
     public void setCylinder(int cylinder) {
         this.cylinder = cylinder;
     }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "cylinder=" + cylinder +
+                '}';
+    }
 }
