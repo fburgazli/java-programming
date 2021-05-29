@@ -10,6 +10,14 @@ public class Customer {
         System.out.println("No-args constructor");
     }
 
+    public Customer(String name, int id){
+        System.out.println("2-args constructor");
+        //this.name = name;
+        setName(name);
+        //this.id = id;
+        setId(id);
+    }
+
     public String getName() {
         return name;
     }
