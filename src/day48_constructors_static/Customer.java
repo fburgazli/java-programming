@@ -5,8 +5,9 @@ public class Customer {
     private String name;
     private int id;
 
+    //no-args constructor
     public Customer(){
-
+        System.out.println("No-args constructor");
     }
 
     public String getName() {
